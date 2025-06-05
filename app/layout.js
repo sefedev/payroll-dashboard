@@ -8,8 +8,16 @@ const LeagueSpartanSans = League_Spartan({
 });
 
 export const metadata = {
-  title: "Payroll - Dashboard",
-  description: "This is a dashboard for Global Employee Payroll",
+  title: "Payroll Dashboard | Manage Payroll Effortlessly",
+  description: "A comprehensive payroll dashboard to manage businesses, employees, and payroll analytics efficiently.",
+  openGraph: {
+    title: "Payroll Dashboard",
+    description: "Manage payroll, employees, and analytics in one place.",
+    url: "https://payroll-dashboard-chi.vercel.app/",
+    siteName: "Payroll Dashboard",
+    locale: "en_US",
+    type: "website",
+  }
 };
 
 export default function RootLayout({ children }) {
