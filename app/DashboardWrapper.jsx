@@ -3,7 +3,7 @@ import Sidebar from "@/components/Sidebar";
 import { SidebarProvider, useSidebar } from "@/context/SideBarContext";
 import React from "react";
 
-const DashboardWrapperInner = ({ children }) => {
+const DashboardLayout = ({ children }) => {
   const { isSideBarCollapsed, toggleSideBar } = useSidebar();
   
   return (
@@ -22,7 +22,7 @@ const DashboardWrapperInner = ({ children }) => {
 
 const DashboardWrapper = ({ children }) => (
   <SidebarProvider>
-    <DashboardWrapperInner>{children}</DashboardWrapperInner>
+    <DashboardLayout>{children}</DashboardLayout>
   </SidebarProvider>
 );
 
