@@ -55,7 +55,7 @@ const Sidebar = () => {
   return (
     <aside
       className={`fixed flex flex-col ${
-        isSideBarCollapsed ? "w-0 md:w-16" : "md:w-72"
+        isSideBarCollapsed ? "w-0 md:w-16" : "w-64 md:w-72"
       } transition-all duration-300 bg-primary text-white overflow h-full shadow-md z-40`}
     >
       {/* FLOATING COLLAPSABLE TOGGLE BUTTON */}
