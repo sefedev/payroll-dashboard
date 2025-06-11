@@ -4,7 +4,7 @@ import { SidebarProvider, useSidebar } from "@/context/SideBarContext";
 import React from "react";
 
 const DashboardLayout = ({ children }) => {
-  const { isSideBarCollapsed, toggleSideBar } = useSidebar();
+  const { isSideBarCollapsed } = useSidebar();
   
   return (
     <>

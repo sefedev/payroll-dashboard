@@ -4,16 +4,8 @@ import AnalyticsChart from "@/components/AnalyticsChart";
 import BusinessStat from "@/components/BusinessStat";
 import DisplayCard from "@/components/DisplayCard";
 import { useSidebar } from "@/context/SideBarContext";
+import { PAYROLL_STAT } from "@/utils/constant";
 import { Bell } from "lucide-react";
-
-const PAYROLL_STAT = [
-  { title: "Total Businesses", stat: "20" },
-  { title: "Total Employees", stat: "10" },
-  { title: "Total Processed Payrolls", stat: "10" },
-  { title: "Total Payments", stat: "$100,000.00" },
-  { title: "Total Withdrawal", stat: "$10,000" },
-  { title: "Revenue", stat: "$100,000.67" },
-];
 
 export default function Home() {
   const { isSideBarCollapsed } = useSidebar();
